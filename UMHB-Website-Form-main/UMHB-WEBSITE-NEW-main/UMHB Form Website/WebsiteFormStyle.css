@@ -1,0 +1,85 @@
+ .websiteform {
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FEC324;
+    background-color: #492F92;
+ }
+
+ .umhbLogo {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #FEC324;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: white;
+    font-size: 25px;
+ }
+
+  .inputCenter {
+   text-align: center;
+  }
+
+  .inputSize {
+   width: 300px;
+   height: 20px;
+  }
+
+ .buttons {
+   visibility: visible;
+   text-align: center;
+ }
+
+  /* .freshacc {
+   display: none;
+   overflow: hidden;
+  } */
+
+ #resetbutton {
+   width: 300px;
+   height: 35px;
+ }
+
+ #savebutton {
+   width: 300px;
+   height: 35px;
+ }
+
+ #foptions {
+    visibility: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+ }
+
+ #sophoptions {
+    visibility: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: #FEC324;
+    font-size: 20px;
+ }
+
+ #joptions {
+    visibility: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+ }
+
+ #senoptions {
+    visibility: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: #FEC324;
+    font-size: 20px;
+  }
+

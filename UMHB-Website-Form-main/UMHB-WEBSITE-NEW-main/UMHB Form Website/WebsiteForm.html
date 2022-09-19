@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UMHB Website Form</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\sw_yearbook\Desktop\UMHB-Website-Form-main\UMHB-WEBSITE-NEW-main\UMHB Form Website\WebsiteFormStyle.css">
+        <script src="C:\Users\sw_yearbook\Desktop\UMHB-Website-Form-main\UMHB-WEBSITE-NEW-main\UMHB Form Website\WebsiteFormBack.js"></script>
+    </head>
+    <body>
+        <form name="websiteForm" id="websiteForm" class="websiteform" onsubmit="checkForm();"> <!-- Form that wants input of your ID, Name and school year-->
+            <img src="images/UMHBLogo.png" class="umhbLogo">
+            <div class="inputCenter">
+                <label for="nameInput" class="label">Name</label>
+                <input type="text" id="nameInput" class="inputSize">
+            </div>
+            <br>
+            <div class="inputCenter">
+                <label for="idInput" class="label">UMHB ID</label>
+                <input type="text" name="idInput" id="idInput" class="inputSize" maxlength="6"> 
+            </div>
+            <br>
+            <div class="inputCenter">
+                <label for="yearMenu" class="label">College Year</label>
+                <select id="yearMenu" class="inputSize" onchange="yearOptions();"> <!-- onchange allows the radios to be visibile -->
+                    <option value="0">Please Select Year</option> <!-- Values 0-4 -->
+                    <option value="1">Freshman</option>
+                    <option value="2">Sophomore</option>
+                    <option value="3">Junior</option>
+                    <option value="4">Senior</option>
+                </select>
+            </div>
+            <br>
+            <div id="foptions" class="freshacc"> <!-- Freshman radio Options -->
+                <label>How Many Hours Taken As A Freshman</label> <!-- Values 5-10 -->
+                <br>
+                <label for="foptions1" value="5">12</label>
+                <input type="radio" id="foptions1">
+                <br>
+                <label for="foptions2" value="6">14</label>
+                <input type="radio" id="foptions2">
+                <br>
+                <label for="foptions3" value="7">15</label>
+                <input type="radio" id="foptions3">
+                <br>
+                <label for="foptions4" value="8">16</label>
+                <input type="radio" id="foptions4">
+                <br>
+                <label for="foptions5" value="9">17</label>
+                <input type="radio" id="foptions5">
+                <br>
+                <label for="foptions6" value="10">18</label>
+                <input type="radio" id="foptions6">
+            </div>
+            <div id="sophoptions">  <!-- Sophomore radio Options  -->
+                <label>How Many Hours Taken As A Sophomore</label> <!-- Values 11-16 -->
+                <br>
+                <label for="sophoptions1" value="11">12</label>
+                <input type="radio" id="sophoptions1">
+                <br>
+                <label for="sophoptions2" value="12">14</label>
+                <input type="radio" id="sophoptions2">
+                <br>
+                <label for="sophoptions3" value="13">15</label>
+                <input type="radio" id="sophoptions3">
+                <br>
+                <label for="sophoptions4" value="14">16</label>
+                <input type="radio" id="sophoptions4">
+                <br>
+                <label for="sophoptions5" value="15">17</label>
+                <input type="radio" id="sophoptions5">
+                <br>
+                <label for="sophoptions6" value="16">18</label>
+                <input type="radio" id="sophoptions6">
+            </div>
+            <div id="joptions">  <!-- Junior radio options -->
+                <label>How Many Hours Taken As A Junior</label> <!-- Values 17-22 -->
+                <br>
+                <label for="joptions1" value="17">12</label>
+                <input type="radio" id="joptions1">
+                <br>
+                <label for="joptions2" value="18">14</label>
+                <input type="radio" id="joptions2">
+                <br>
+                <label for="joptions3" value="19">15</label>
+                <input type="radio" id="joptions3">
+                <br>
+                <label for="joptions4" value="20">16</label>
+                <input type="radio" id="joptions4">
+                <br>
+                <label for="joptions5" value="21">17</label>
+                <input type="radio" id="joptions5">
+                <br>
+                <label for="joptions6" value="22">18</label>
+                <input type="radio" id="joptions6">
+            </div>
+            <div id="senoptions"> <!-- Senior radio options -->
+                <label>How Many Hours Taken As A Senior</label> <!-- Values 23-28 -->
+                <br>
+                <label for="senoptions1">12</label>
+                <input type="radio" id="senoptions1">
+                <br>
+                <label for="senoptions2">14</label>
+                <input type="radio" id="senoptions2">
+                <br>
+                <label for="senoptions3">15</label>
+                <input type="radio" id="senoptions3">
+                <br>
+                <label for="senoptions4">16</label>
+                <input type="radio" id="senoptions4">
+                <br>
+                <label for="senoptions5">17</label>
+                <input type="radio" id="senoptions5">
+                <br>
+                <label for="senoptions6">18</label>
+                <input type="radio" id="senoptions6">
+            </div>
+            <br>
+            <div class="buttons">
+                <input id="savebutton" type="submit" value="Save" onclick="idLength(document.websiteForm.idInput, 6);"> <!-- Only allows the id to be 6 characters long -->
+                <br>
+                <button id="resetbutton" onclick="location.reload();">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>
